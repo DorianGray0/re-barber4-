@@ -6,6 +6,7 @@
   --secondary-text-color: #555555;
   --accent-color: #ff6c00;
   --gap-regular: 30px;
+  --bg-linear-gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
 }
 
 body {
@@ -194,6 +195,10 @@ address {
   padding: 272px 100px 208px 100px;
 
   background-color: #504d4d;
+  background-image: var(--bg-linear-gradient), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-upper-text {
@@ -276,6 +281,10 @@ address {
   padding-bottom: 120px;
 
   background-color: rgb(118, 132, 132);
+  background-image: url(../images/prices-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .services-upper-text {
@@ -417,11 +426,40 @@ address {
 }
 
 .team-item-text {
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 1.35;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color);
+}
+
+.team-soc-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+  background-color: var(--interact-color);
+  border-radius: 50%;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  fill: var(--accent-color);
 }
 
 /* ---------------------------portfolio */
@@ -454,10 +492,11 @@ address {
   padding-top: 130px;
   padding-bottom: 174px;
 
-  background-color: rgb(9, 69, 97);
+  background-color: #191c26;
 }
 
 .booking-title {
+  text-align: center;
   color: var(--first-title-color);
 }
 
@@ -467,7 +506,12 @@ address {
   padding-top: 130px;
   padding-bottom: 111px;
 
-  background-color: rgb(9, 69, 97);
+  background-color: #191c26;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.7), rgba(25, 28, 38, 0.7)),
+    url(../images/contacts-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .contacts-title {
